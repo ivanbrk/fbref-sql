@@ -47,9 +47,7 @@ cursor.executemany('''INSERT INTO competitions (
     VALUES (%s, %s, %s, %s)''', 
     competitions_data)
 
-# Commit the changes
 conn.commit()
 
-# Close the cursor and connection
 cursor.close()
 conn.close()
